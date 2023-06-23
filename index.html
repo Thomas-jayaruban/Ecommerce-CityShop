@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="navbar navbar-dark fixed-top  bg-primary py-1 navbar-expand-lg " >
+        <div class="container">
+            <div class="logo">
+                <a href="" class="navbar-brand"><img src="images/logo.png" alt="logo" width="80" height="40">
+                CITY SHOP
+                </a>
+            </div>
+            <div class=" d-lg-block d-none" >
+                <form action="" class="d-flex"  id="searching" >
+                    <input type="search" placeholder="Search for Items, Brands" class="form-control">
+                    <button type="submit"  id="searchButton"><img src="images/search.svg" class="rounded-5 " alt=""></button>
+                </form>
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-lg-grow-0 flex-md-grow-1" id="main-menu">
+                <ul class="navbar-nav ms-auto gap-2" >
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <button class="btn btn-light">Login</button>
+                        </a>
+                    </li>
+                    <li class="nav-item pt-2 ">
+                        <a href="#" class="nav-link text-white">
+                            Become a seller
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown pt-2">
+                        <a href="#" class="nav-link dropdown-toggle text-white">
+                            More
+                        </a>
+                    </li>
+                    <li class="nav-item pt-2 ">
+                        <a href="#" class="nav-link text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg>
+                              Cart
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </nav>
+   <div class="container-fluid text-dark mx-auto d-flex shadow   p-3 pb-0 " id="items" >
+     <div class="container grid gap-5 d-flex flex-row justify-content-between fw-semibold ">
+         <div class="p-2 g-col-3 pb-0 text-center">
+            <img src="images/navigation/grocery.png" width="60px" height="50px">
+             <p class="">Grocery</p>
+         </div>
+         <div class="p-2 g-col-3 pb-0 text-center">
+
+             <img src="images/navigation/mobiles.png" width="60px" height="50px">
+             <p>Mobiles</p>
+         </div>
+         <div class="p-2 g-col-3 pb-0 text-center">
+             <img src="images/navigation/fashion.png" width="60px" height="50px">
+             <p>Fashion</p>
+         </div>
+         <div class="p-2 g-col-3 text-center">
+             <img src="images/navigation/Laptop.png" width="60px" height="50px">
+             <p>Electronics</p>
+         </div>
+         <div class="p-2 g-col-3 pb-0 text-center" >
+             <img src="images/navigation/Furniture.png" width="60px" height="50px">
+             <p>Furnitures</p>
+         </div>
+         <div class="p-2 g-col-3 pb-0 text-center">
+             <img src="images/navigation/appliances.png" width="60px" height="50px">
+             <p>Appliances</p>
+         </div>
+         <div class="p-2 g-col-3 pb-0 text-center">
+             <img src="images/navigation/offers.gif" width="60px" height="50px">
+             <p class="dropdown-toggle">Offers</p>
+         </div>
+         <div class="p-2 g-col-3 pb-0 text-center">
+             <img src="images/navigation/toys.png" width="60px" height="50px">
+             <p >Toys</p>
+         </div>
+         <div class="p-2 g-col-3 pb-0 text-center">
+             <img src="images/navigation/two%20wheeler.png" width="60px" height="50px">
+             <p>Scooty</p>
+         </div>
+
+     </div>
+   </div>
+    <div class="container-fluid">
+        <div  class="carousel slide carousel-dark" id="carouselEg" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators" >
+                <button type="button" data-bs-target="#carouselEg" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselEg" data-bs-slide-to="1" ></button>
+                <button type="button" data-bs-target="#carouselEg" data-bs-slide-to="2" ></button>
+                <button type="button" data-bs-target="#carouselEg" data-bs-slide-to="3" ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="images/banner/banner-4.jpg" class="d-block w-100"  style="height:350px">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/banner/banner-1.jpg" class="d-block w-100" style="height:350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner/banner-2.jpg" class="d-block w-100"  style="height:350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner/banner-3.png" class="d-block w-100"  style="height:350px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEg" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEg" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+   <div class="container-fluid mt-4 d-flex shadow-sm " >
+       <div class="card text-center border-top-0 border-bottom-0 border-start-0" style="width: 18rem;">
+           <img src="images/P1/offer.gif" class="card-img-top" width="30px" height="150px">
+           <div class="card-body">
+               <h5 class="card-title">New and Top offers</h5>
+
+               <a href="#" class="btn btn-primary">View All</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P1/apple-ipad.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Apple Ipad</h5>
+                <blockquote class="blockquote">
+                    30% offer
+                </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P1/dress.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Fashion</h5>
+               <blockquote class="blockquote">
+                   70% offer
+               </blockquote>
+               <a href="#" class="btn btn-primary">View More</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P1/camers.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Camera</h5>
+               <blockquote class="blockquote">
+                    From ₹3999
+               </blockquote>
+               <a href="#" class="btn btn-primary">View More</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P1/samsungAC.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Samsung AC's</h5>
+               <blockquote class="blockquote">
+                 From ₹21490
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P1/rice-cooker.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Rice-cooker</h5>
+               <blockquote class="blockquote">
+                   60% offer
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+
+   </div>
+
+   <div class="container-fluid mt-4 d-flex shadow-sm" >
+       <div class="card text-center border-top-0 border-bottom-0 border-start-0 " style="width: 18rem;">
+           <img src="images/P2/mobile.gif" class="card-img-top " style="width:120px; margin: 0 auto;" height="150px">
+           <div class="card-body">
+               <h5 class="card-title">Mobile Phone</h5>
+               <p class="card-text">New Arrivals</p>
+               <a href="#" class="btn btn-primary">View All</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P2/Blaze-2.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Lava Blaze 2</h5>
+               <blockquote class="blockquote">
+                   6gb ram 128gb storage
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P2/OnePlus-Nord-3.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">One+ Nord 3 5G</h5>
+               <blockquote class="blockquote">
+                   8gb ram 128gb storage
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 12rem;">
+           <img src="images/P2/realme-narzo.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Realme 50i</h5>
+               <blockquote class="blockquote">
+                   4gb ram 64 gb storage
+
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P2/samsung-galaxy.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Samsung M13</h5>
+               <blockquote class="blockquote">
+                   4gb ram 64 gb storage
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P2/redmi%2011.jpg" class="card-img-top"  height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Redmi 11 Prime</h5>
+               <blockquote class="blockquote">
+                   5G 4gb ram 64 gb storage
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+
+
+   </div>
+   <div class="container-fluid mt-4 d-flex shadow-sm" >
+       <div class="card text-center border-top-0 border-bottom-0 border-start-0" style="width: 18rem;">
+           <img src="images/P3/laptop.gif" class="card-img-top" width="30px" height="150px">
+           <div class="card-body">
+               <h5 class="card-title">Laptops</h5>
+               <p class="card-text">New Arrivals</p>
+               <a href="#" class="btn btn-primary">View All</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap1.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Acer One 14 Business Laptop</h5>
+               <blockquote class="blockquote">
+                   8GB RAM/512GB SSD/Windows 11 Home
+                   <p class="badge bg-danger text-wrap">23% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap2.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">HP 14s, 12th Gen Intel Core i5</h5>
+               <blockquote class="blockquote">
+                   8GB RAM/512GB SSD/Windows 11 Home
+                   <p class="badge bg-danger text-wrap">17% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 12rem;">
+           <img src="images/P3/Lap3.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Honor MagicBook</h5>
+               <blockquote class="blockquote">
+                   12th Gen Intel Core-i5/Windows 11
+                   <p class="badge bg-danger text-wrap">35% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap4.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">HP Envy x360 for Creators</h5>
+               <blockquote class="blockquote">
+                   12th Gen Intel Core i5/Windows 11
+                   <p class="badge bg-danger text-wrap">20% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap5.jpg" class="card-img-top"  height="150px">
+           <div class="card-body">
+               <h5 class="card-text">ASUS Vivobook Go 15 OLED </h5>
+               <blockquote class="blockquote">
+                   Intel Core i3-N305, 15.6" (39.62 cms)
+                   <p class="badge bg-danger text-wrap">40% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+
+
+   </div>
+   <div class="container-fluid mt-4 d-flex shadow-sm" >
+       <div class="card text-center border-top-0 border-bottom-0 border-start-0" style="width: 18rem;">
+           <img src="images/P3/laptop.gif" class="card-img-top" width="30px" height="150px">
+           <div class="card-body">
+               <h5 class="card-title">Laptops</h5>
+               <p class="card-text">New Arrivals</p>
+               <a href="#" class="btn btn-primary">View All</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap1.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Acer One 14 Business Laptop</h5>
+               <blockquote class="blockquote">
+                   8GB RAM/512GB SSD/Windows 11 Home
+                   <p class="badge bg-danger text-wrap">23% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap2.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">HP 14s, 12th Gen Intel Core i5</h5>
+               <blockquote class="blockquote">
+                   8GB RAM/512GB SSD/Windows 11 Home
+                   <p class="badge bg-danger text-wrap">17% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 12rem;">
+           <img src="images/P3/Lap3.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">Honor MagicBook</h5>
+               <blockquote class="blockquote">
+                   12th Gen Intel Core-i5/Windows 11
+                   <p class="badge bg-danger text-wrap">35% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap4.jpg" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-text">HP Envy x360 for Creators</h5>
+               <blockquote class="blockquote">
+                   12th Gen Intel Core i5/Windows 11
+                   <p class="badge bg-danger text-wrap">20% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+       <div class="card text-center border-0 ms-2" style="width: 13rem;">
+           <img src="images/P3/Lap5.jpg" class="card-img-top"  height="150px">
+           <div class="card-body">
+               <h5 class="card-text">ASUS Vivobook Go 15 OLED </h5>
+               <blockquote class="blockquote">
+                   Intel Core i3-N305, 15.6" (39.62 cms)
+                   <p class="badge bg-danger text-wrap">40% off</p>
+               </blockquote>
+               <a href="#" class="btn btn-primary">Add to cart</a>
+           </div>
+
+       </div>
+
+
+   </div>
+   <div class="container-fluid mt-2 mb-2 d-flex shadow-sm d-flex justify-content-center"  >
+       <div class="card text-center border-top-0 border-bottom-0 border-start-0 me-4" style="width: 12rem;">
+           <img src="videos/realme.png" class="card-img-top" height="150px">
+           <div class="card-body">
+               <h5 class="card-title">New Arrival</h5>
+               <p class="card-text">Realme 11+ pro 5g</p>
+               <blockquote class="blockquote">
+
+                   <p class="badge bg-success text-wrap">Buy NOW!!!</p>
+               </blockquote>
+
+           </div>
+
+       </div>
+       <video width="450px" src="videos/realme%2011%20Pro%20Series%205G.mp4" loop muted class="object-fit-contain" autoplay></video>
+   </div>
+   <div class="container-fluid bg-dark text-white">
+       <footer class="py-5">
+           <div class="row  d-flex justify-content-center">
+               <div class="col-6 col-md-2 mb-3 ">
+                   <h5 class="fw-bold">Get to know us</h5>
+                   <ul class="nav flex-column text-white">
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About us</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Careers</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Press release</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+
+                   </ul>
+               </div>
+
+               <div class="col-6 col-md-2 mb-3">
+                   <h5 class="fw-bold">Connect with us</h5>
+                   <ul class="nav flex-column">
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Facebook</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Instagram</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Twitter</a></li>
+
+                   </ul>
+               </div>
+
+               <div class="col-6 col-md-2 mb-3">
+                   <h5>Make money wuth us</h5>
+                   <ul class="nav flex-column">
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Sell with Us</a></li>
+
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+                   </ul>
+               </div>
+
+               <div class="col-6 col-md-2 mb-3">
+                   <h5>Let us help you</h5>
+                   <ul class="nav flex-column">
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Your Account</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Return products</a></li>
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0">100% Purchase protection</a></li>
+
+                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+                   </ul>
+               </div>
+
+
+           </div>
+
+           <div class="d-flex flex-column flex-sm-row justify-content-center border-top">
+               <p>© 2023 City Shop, Inc. All rights reserved.</p>
+
+           </div>
+       </footer>
+   </div>
+
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
